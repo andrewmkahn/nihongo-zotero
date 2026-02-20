@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "NihongoZotero",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0.1",
   "description": "NihongoZotero: store and display multilingual/Japanese metadata (alternate titles, romanizations, translations) for Zotero items.",
   "author": "andrewmkahn",
   "applications": {

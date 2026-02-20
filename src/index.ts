@@ -214,4 +214,4 @@ class NihongoZoteroPlugin {
 }
 
 // Attach to Zotero so bootstrap.js can reach it after loadSubScript()
-(Zotero as any).__nihongoZotero = { plugin: new JaMetadataPlugin() };
+(Zotero as any).__nihongoZotero = { plugin: new NihongoZoteroPlugin() };
