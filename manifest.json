@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "NihongoZotero",
+  "version": "0.1.0-alpha.1",
+  "description": "NihongoZotero: store and display multilingual/Japanese metadata (alternate titles, romanizations, translations) for Zotero items.",
+  "author": "andrewkahn",
+  "applications": {
+    "zotero": {
+      "id": "nihongo-zotero@andrewkahn",
+      "update_url": "https://raw.githubusercontent.com/andrewkahn/nihongo-zotero/main/update.json",
+      "strict_min_version": "6.999",
+      "strict_max_version": "8.*"
+    }
+  }
+}
