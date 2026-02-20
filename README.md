@@ -73,7 +73,7 @@ If you are migrating from [Jurism](https://juris-m.github.io/) (a Zotero fork wi
 
 ## Installation
 
-1. Download the latest `nihongo-zotero.xpi` from the [Releases](https://github.com/andrewkahn/nihongo-zotero/releases) page.
+1. Download the latest `nihongo-zotero.xpi` from the [Releases](https://github.com/andrewmkahn/nihongo-zotero/releases) page.
 2. In Zotero: **Tools → Add-ons → gear icon → Install Add-on From File…**
 3. Select the `.xpi` file and restart Zotero.
 
@@ -109,7 +109,7 @@ place-roman: Tokyo
 ## Development
 
 ```bash
-git clone https://github.com/andrewkahn/nihongo-zotero.git
+git clone https://github.com/andrewmkahn/nihongo-zotero.git
 cd nihongo-zotero
 npm install
 npm run build        # compile TypeScript → addon/chrome/content/index.js
