@@ -45,7 +45,10 @@ function creatorNames(item: Zotero.Item, type: string): string {
   return item
     .getCreators()
     .filter((c: any) => c.creatorType === type)
-    .map((c: any) => `${c.lastName ?? ""}${c.firstName ? " " + c.firstName : ""}`.trim())
+    .map((c: any) => {
+      const split = `${c.lastName ?? ""}${c.firstName ? " " + c.firstName : ""}`.trim();
+      return split || (c.name ?? "");
+    })
     .filter(Boolean)
     .join("; ");
 }
