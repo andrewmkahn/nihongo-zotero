@@ -44,7 +44,7 @@ function tryGetField(item: Zotero.Item, field: string): string {
 function creatorNames(item: Zotero.Item, type: string): string {
   return item
     .getCreators()
-    .filter((c: any) => c.creatorType === type)
+    .filter((c: any) => (Zotero.CreatorTypes as any).getName(c.creatorTypeID) === type)
     .map((c: any) => {
       const split = `${c.lastName ?? ""}${c.firstName ? " " + c.firstName : ""}`.trim();
       return split || (c.name ?? "");
